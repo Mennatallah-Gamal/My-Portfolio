@@ -1,0 +1,214 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-decoration: none;
+}
+header {
+  background-color: #f0f0f0;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 150px;
+}
+.logo {
+  color: #2d4057;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+.navigation a {
+  color: #2d4057;
+  font-size: 1.1em;
+  font-weight: 500;
+  padding-left: 30px;
+}
+.navigation a:hover {
+  color: #4097aa;
+}
+section {
+  padding: 100px 200px;
+}
+.main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #2d4057;
+}
+.main span {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #fa9483;
+    font-size:1.5em ;
+    font-weight: 500;
+}
+.main h1 {
+    color: #f3deca;
+    font-size: 2.7em;
+    font-weight: 600;
+}
+.main .main-btn {
+    color: #f3deca;
+    background-color: #4097aa;
+    padding: 15px 35px ;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-bottom: 40px;
+    margin-top: 25px;
+    transition: 0.7s ease;
+}
+.main .main-btn:hover {
+    background-color: #368597;
+}
+.main .social-icons a{
+    color: #f3deca;
+    font-size: 1.7em;
+    margin-left: 20px ;
+}
+.projects {
+    padding: 100px 40px;
+}
+.title {
+    display: flex;
+    justify-content: center;
+    color: #2d4057;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 70px;
+}
+.card {
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.7s ease;
+}
+.card:hover {
+    transform: scale(1.1);
+}
+.card .project-image img{
+    width: 100%;
+    height: 200px;
+}
+.card .project-info{
+    padding: 20px;
+}
+.card .project-info h3{
+    color: #2d4057;
+}
+.card .project-info a{
+    color: #4097aa;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.project-info a:hover {
+    color: #368597;
+  }
+.contact {
+    background-color:  #2d4057;
+}
+.contact .title {
+    color: #f3deca;
+}
+.contact .content {
+    display: flex;
+    justify-content: center;
+}
+.contact-card {
+    background-color: #f3deca;
+    color: #2d4057;
+    padding: 35px 20px;
+    height: 250px;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+}
+.contact-card i {
+    font-size: 100px;
+}
+.contact-card  p{
+    font-size: 20px;
+    font-weight: 600;
+}
+footer {
+    background-color: #f0f0f0;
+    color: #2d4057;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-title span {
+    font-weight: 600;
+}
+footer i {
+    margin-right: 20px;
+    font-size: 1.7em;
+    color: #2d4057;
+}
+@media (max-width: 1023px) {
+    header {
+        padding: 12px 20px;
+    }
+    .logo {
+        font-size: 1em;
+    }
+    .navigation a {
+        padding-left: 10px;
+        font-size: 0.8em;
+    }
+    section,
+    .projects {
+        padding: 80px 20px;
+    }
+    .main {
+        justify-content: center;
+        text-align: center;
+        padding-top: 100px;
+    }
+    .main span {
+        font-size: 1.1em;
+    }
+    .main h1 {
+        font-size: 1.7em;
+    }
+    .main .main-btn {
+        padding: 12px 20px;
+        font-size: 1em;
+        letter-spacing: 1px;
+        margin-bottom: 30px;
+        margin-top: 25px;
+        display: block;
+    }
+    .main .social-icons {
+        text-align: center;
+    }
+    .main .social-icons a{
+        font-size: 2em;
+    }
+    .title {
+        font-size: 1.8em;
+    }
+    .card:hover {
+        transform: scale(1);
+    }
+    footer {
+        flex-direction: column;
+    }
+    .footer-title {
+        margin-bottom: 15px;
+    }
+}
