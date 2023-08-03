@@ -90,6 +90,11 @@ section {
     gap: 30px;
     margin-top: 70px;
 }
+@media(max-width: 767px) {
+    .content {
+        grid-template-columns: minmax(300px, 1fr);
+    }
+}
 .card {
     box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
     border-radius: 10px;
